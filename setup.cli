@@ -1,3 +1,4 @@
+embed-server
 /subsystem=resource-adapters/resource-adapter=ldapQS:add(module=org.jboss.teiid.resource-adapter.ldap)
 /subsystem=resource-adapters/resource-adapter=ldapQS/connection-definitions=ldapDS:add(jndi-name=java:/ldapDS, class-name=org.teiid.resource.adapter.ldap.LDAPManagedConnectionFactory, enabled=true, use-java-context=true)
 /subsystem=resource-adapters/resource-adapter=ldapQS/connection-definitions=ldapDS/config-properties=LdapUrl:add(value=${ldap.url})
