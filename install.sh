@@ -4,7 +4,9 @@ set -x
 
 injected_dir=$1
 
-whoami
+defaultjobrepo="<default-job-repository name=\"in-memory\"/>"
+
+sed -i "s|<!-- ##DEFAULT_JOB_REPOSITORY## -->|${defaultjobrepo}" ${JBOSS_HOME}/standalone/configuation/standalone-openshift.xml
 
 ${JBOSS_HOME}/bin/jboss-cli.sh --file=${injected_dir}/setup.cli
 
