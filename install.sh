@@ -11,4 +11,4 @@ mkdir -p ${JBOSS_HOME}/standalone/data/content
 mkdir -p ${JBOSS_HOME}/standalone/data/activemq/journal
 chmod -R 777 ${JBOSS_HOME}/standalone/data
 chmod -R 777 ${JBOSS_HOME}/standalone/tmp
-chown -R 185:root ${JBOSS_HOME}/standalone
+chown -R 185:root ${JBOSS_HOME}
