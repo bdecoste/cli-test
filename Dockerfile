@@ -7,3 +7,4 @@ LABEL Name="jboss-eap-7/cli-test" \
 
 COPY setup.cli /injected/setup.cli
 COPY install.sh /injected/install.sh
+COPY standalone-openshift.xml /injected/standalone-openshift.xml
